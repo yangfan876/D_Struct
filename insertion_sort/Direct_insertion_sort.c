@@ -5,6 +5,7 @@
  **************************************/
 
 #include <stdio.h>
+#include "useful_code.h"
 
 void Direct_insertion_sort (int O_arr[], int N_arr[], int num);
 void move_insert (int O_arr, int N_arr[], int pos, int count);
@@ -47,15 +48,4 @@ void Direct_insertion_sort (int O_arr[], int N_arr[], int num)
 		move_insert (O_arr[i], N_arr, pos, count);
 		count ++;
 	}
-}
-
-void move_insert (int elem, int N_arr[], int pos, int count)
-{
-	int i;
-	for (i = count - 1; i >= pos; i --)
-	{
-		N_arr[i + 1] = N_arr[i];
-	}
-	N_arr[pos] = elem;
-	return;
 }
