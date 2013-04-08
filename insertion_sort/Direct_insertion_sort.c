@@ -5,10 +5,9 @@
  **************************************/
 
 #include <stdio.h>
-#include "useful_code.h"
+#include "sort_method.h"
 
 void Direct_insertion_sort (int O_arr[], int N_arr[], int num);
-void move_insert (int O_arr, int N_arr[], int pos, int count);
 
 void main (void)
 {
@@ -27,25 +26,4 @@ void main (void)
 	return;
 }
 
-void Direct_insertion_sort (int O_arr[], int N_arr[], int num)
-{
-	int i, j, load, count, pos;
-	
-	count = 0;
 
-	for (i = 0; i < num; i ++)
-	{
-		pos = 0;
-
-		for (j = 0; j < count; j ++)
-		{
-			if (O_arr[i] > N_arr[j])
-				pos = j + 1;
-			else
-				break;
-		}
-
-		move_insert (O_arr[i], N_arr, pos, count);
-		count ++;
-	}
-}

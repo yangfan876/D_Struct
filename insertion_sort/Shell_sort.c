@@ -1,9 +1,9 @@
-/**************************************
- * @file 	Half_insertion_sort	
+/*********************************
+ * @file	Shell_sort
  * @auther	yangfan
- * @brief	improve the Direct 
- * 			insertion sort
- **************************************/
+ * @brief	implement the shell
+ * 			sort method
+ *********************************/
 
 #include <stdio.h>
 #include "sort_method.h"
@@ -17,14 +17,15 @@ void main (void)
 	int N_arr[NUM_OARR];
 	int i;
 
-	half_insertion_sort (O_arr, N_arr, NUM_OARR);
-	
+	shell_sort (O_arr, N_arr, NUM_OARR, 5);
+
 	for (i = 0; i < NUM_OARR; i ++)
 	{
-		printf ("%d ", N_arr[i]);
+		printf ("%d ", O_arr[i]);
 	}
 
 	printf ("\n");
 	return;
 
+	
 }
