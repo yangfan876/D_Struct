@@ -1,5 +1,5 @@
 /********************************************
- *@filename:heap_sort.c
+ *@filename:	heap_sort.c
  *@auther:	yangfan
  *@brief:	this code implement the heap
  *			sort function.
